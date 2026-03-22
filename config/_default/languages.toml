@@ -18,6 +18,8 @@
         name = "归档"
         url = "/archives/"
         weight = 2
+        [zh.params.footer]
+        customText = "[站点地图 (Sitemap)](/sitemap.xml)"
 
 
 # 2. 英语 (全球通用长尾流量)
@@ -39,6 +41,8 @@
         name = "Archives"
         url = "/archives/"
         weight = 2
+        [en.params.footer]
+        customText = "[Sitemap](/sitemap.xml)"
 
 
 # 3. 西班牙语 (第二大母语人口)
@@ -55,6 +59,8 @@
         name = "Inicio"
         url = "/"
         weight = 1
+        [es.params.footer]
+        customText = "[Mapa del sitio](/sitemap.xml)"
 
 
 # 4. 阿拉伯语 (蓝海高转化市场)
@@ -72,6 +78,8 @@
         name = "الرئيسية"
         url = "/"
         weight = 1
+        [ar.params.footer]
+        customText = "[خريطة الموقع](/sitemap.xml)"
 
 
 # 5. 印尼语 (东南亚新兴流量)
@@ -88,3 +96,5 @@
         name = "Beranda"
         url = "/"
         weight = 1
+        [id.params.footer]
+        customText = "[Peta Situs](/sitemap.xml)"
