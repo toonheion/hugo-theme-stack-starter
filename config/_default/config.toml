@@ -1,6 +1,6 @@
 # Change baseurl before deploy
-baseurl      = "https://blog.aikaiyou.com//"
-languageCode = "zh-cn"
+baseurl      = "https://blog.aikaiyou.com/"
+languageCode = "zh"
 title        = "AiKaiYou`s blog"
 
 # Theme i18n support
