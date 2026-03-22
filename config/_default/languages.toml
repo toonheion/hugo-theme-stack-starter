@@ -11,7 +11,8 @@
     [zh.params.sidebar]
         subtitle = "专注技术与生活分享的个人博客"
     [zh.params.footer]
-        customText = "[站点地图 (Sitemap)](/sitemap.xml)"
+       # 默认语言，路径在根目录
+customText = "<a href='/sitemap.xml'>站点地图 (Sitemap)</a>"
 
     # 【核心规则】：menu 数组必须写在最后
     [[zh.menu.main]]
@@ -47,7 +48,8 @@
     [en.params.sidebar]
         subtitle = "A personal blog focusing on tech and life"
     [en.params.footer]
-        customText = "[Sitemap](/sitemap.xml)"
+      # 增加 /en/ 路径前缀
+customText = "<a href='/en/sitemap.xml'>Sitemap</a>"
 
     [[en.menu.main]]
         name = "Home"
@@ -82,7 +84,8 @@
     [es.params.sidebar]
         subtitle = "Un blog personal centrado en la tecnología y la vida"
     [es.params.footer]
-        customText = "[Mapa del sitio](/sitemap.xml)"
+      # 增加 /es/ 路径前缀
+customText = "<a href='/es/sitemap.xml'>Mapa del sitio</a>"
 
     [[es.menu.main]]
         name = "Inicio"
@@ -111,7 +114,8 @@
     [ar.params.sidebar]
         subtitle = "مدونة شخصية تركز على التكنولوجيا والحياة"
     [ar.params.footer]
-        customText = "[خريطة الموقع](/sitemap.xml)"
+  # 增加 /ar/ 路径前缀
+customText = "<a href='/ar/sitemap.xml'>خريطة الموقع</a>"
 
     [[ar.menu.main]]
         name = "الرئيسية"
@@ -139,7 +143,8 @@
     [id.params.sidebar]
         subtitle = "Blog pribadi yang berfokus pada teknologi dan kehidupan"
     [id.params.footer]
-        customText = "[Peta Situs](/sitemap.xml)"
+     # 增加 /id/ 路径前缀
+customText = "<a href='/id/sitemap.xml'>Peta Situs</a>"
 
     [[id.menu.main]]
         name = "Beranda"
