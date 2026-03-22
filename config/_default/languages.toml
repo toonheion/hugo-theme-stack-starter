@@ -12,6 +12,8 @@
         name = "归档"
         url = "/archives/"
         weight = 2
+        [zh.params.sidebar]
+    subtitle = "专注技术与生活分享的个人博客"
 
 # 2. 英语 (全球通用长尾流量)
 [en]
@@ -27,6 +29,8 @@
         name = "Archives"
         url = "/archives/"
         weight = 2
+        [en.params.sidebar]
+    subtitle = "A personal blog focusing on tech and life"
 
 # 3. 西班牙语 (第二大母语人口)
 [es]
@@ -38,6 +42,8 @@
         name = "Inicio"
         url = "/"
         weight = 1
+        [es.params.sidebar]
+    subtitle = "Un blog personal centrado en la tecnología y la vida"
 
 # 4. 阿拉伯语 (蓝海高转化市场)
 [ar]
@@ -50,6 +56,8 @@
         name = "الرئيسية"
         url = "/"
         weight = 1
+        [ar.params.sidebar]
+    subtitle = "مدونة شخصية تركز على التكنولوجيا والحياة"
 
 # 5. 印尼语 (东南亚新兴流量)
 [id]
@@ -61,3 +69,5 @@
         name = "Beranda"
         url = "/"
         weight = 1
+        [id.params.sidebar]
+    subtitle = "Blog pribadi yang berfokus pada teknologi dan kehidupan"
