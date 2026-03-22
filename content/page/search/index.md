@@ -1,9 +1,8 @@
 ---
-title: "Search"
-slug: "search"
+title: "搜索"
 layout: "search"
+slug: "search"
 outputs:
     - html
     - json
-
 ---
