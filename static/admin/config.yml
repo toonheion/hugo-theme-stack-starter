@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: toonheion/hugo-theme-stack-starter # 必须替换为你的实际仓库名 (如: toonheion/hugo-theme-stack-starter)
-  branch: main # 确认你的主分支是 main 还是 master
+  branch: master # 确认你的主分支是 main 还是 master
 
 # 核心汉化指令
 locale: zh_Hans
