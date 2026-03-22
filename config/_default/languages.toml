@@ -1,28 +1,43 @@
+# ==========================================
 # 1. 简体中文 (默认基座)
+# ==========================================
 [zh]
     languageName = "简体中文"
-    languageCode = "zh" # 强制修复：必须使用 zh 以精准命中主题自带的 zh.toml 字典
+    languageCode = "zh"
     title = "我的博客"
     weight = 1
 
-    # 规范：必须先写子模块配置 (params)，再写数组配置 (menu)
+    # 【核心规则】：params 必须写在前面
     [zh.params.sidebar]
         subtitle = "专注技术与生活分享的个人博客"
+    [zh.params.footer]
+        customText = "[站点地图 (Sitemap)](/sitemap.xml)"
 
+    # 【核心规则】：menu 数组必须写在最后
     [[zh.menu.main]]
         name = "首页"
         url = "/"
         weight = 1
+        [zh.menu.main.params]
+            icon = "home"
 
     [[zh.menu.main]]
         name = "归档"
         url = "/archives/"
         weight = 2
-        [zh.params.footer]
-        customText = "[站点地图 (Sitemap)](/sitemap.xml)"
+        [zh.menu.main.params]
+            icon = "archives"
 
+    [[zh.menu.main]]
+        name = "搜索"
+        url = "/search/"
+        weight = 3
+        [zh.menu.main.params]
+            icon = "search"
 
+# ==========================================
 # 2. 英语 (全球通用长尾流量)
+# ==========================================
 [en]
     languageName = "English"
     languageCode = "en"
@@ -31,21 +46,33 @@
 
     [en.params.sidebar]
         subtitle = "A personal blog focusing on tech and life"
+    [en.params.footer]
+        customText = "[Sitemap](/sitemap.xml)"
 
     [[en.menu.main]]
         name = "Home"
         url = "/"
         weight = 1
+        [en.menu.main.params]
+            icon = "home"
 
     [[en.menu.main]]
         name = "Archives"
         url = "/archives/"
         weight = 2
-        [en.params.footer]
-        customText = "[Sitemap](/sitemap.xml)"
+        [en.menu.main.params]
+            icon = "archives"
 
+    [[en.menu.main]]
+        name = "Search"
+        url = "/search/"
+        weight = 3
+        [en.menu.main.params]
+            icon = "search"
 
+# ==========================================
 # 3. 西班牙语 (第二大母语人口)
+# ==========================================
 [es]
     languageName = "Español"
     languageCode = "es"
@@ -54,16 +81,26 @@
 
     [es.params.sidebar]
         subtitle = "Un blog personal centrado en la tecnología y la vida"
+    [es.params.footer]
+        customText = "[Mapa del sitio](/sitemap.xml)"
 
     [[es.menu.main]]
         name = "Inicio"
         url = "/"
         weight = 1
-        [es.params.footer]
-        customText = "[Mapa del sitio](/sitemap.xml)"
+        [es.menu.main.params]
+            icon = "home"
 
+    [[es.menu.main]]
+        name = "Archivo"
+        url = "/archives/"
+        weight = 2
+        [es.menu.main.params]
+            icon = "archives"
 
+# ==========================================
 # 4. 阿拉伯语 (蓝海高转化市场)
+# ==========================================
 [ar]
     languageName = "العربية"
     languageCode = "ar"
@@ -73,16 +110,26 @@
 
     [ar.params.sidebar]
         subtitle = "مدونة شخصية تركز على التكنولوجيا والحياة"
+    [ar.params.footer]
+        customText = "[خريطة الموقع](/sitemap.xml)"
 
     [[ar.menu.main]]
         name = "الرئيسية"
         url = "/"
         weight = 1
-        [ar.params.footer]
-        customText = "[خريطة الموقع](/sitemap.xml)"
+        [ar.menu.main.params]
+            icon = "home"
 
+    [[ar.menu.main]]
+        name = "أرشيف"
+        url = "/archives/"
+        weight = 2
+        [ar.menu.main.params]
+            icon = "archives"
 
+# ==========================================
 # 5. 印尼语 (东南亚新兴流量)
+# ==========================================
 [id]
     languageName = "Bahasa Indonesia"
     languageCode = "id"
@@ -91,10 +138,19 @@
 
     [id.params.sidebar]
         subtitle = "Blog pribadi yang berfokus pada teknologi dan kehidupan"
+    [id.params.footer]
+        customText = "[Peta Situs](/sitemap.xml)"
 
     [[id.menu.main]]
         name = "Beranda"
         url = "/"
         weight = 1
-        [id.params.footer]
-        customText = "[Peta Situs](/sitemap.xml)"
+        [id.menu.main.params]
+            icon = "home"
+
+    [[id.menu.main]]
+        name = "Arsip"
+        url = "/archives/"
+        weight = 2
+        [id.menu.main.params]
+            icon = "archives"
