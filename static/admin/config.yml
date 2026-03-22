@@ -1,0 +1,32 @@
+backend:
+  name: github
+  repo: toonheion/hugo-theme-stack-starter # 必须替换为你的实际仓库名 (如: toonheion/hugo-theme-stack-starter)
+  branch: main # 确认你的主分支是 main 还是 master
+
+# 核心汉化指令
+locale: zh_Hans
+
+# 全局媒体文件路径 (备用)
+media_folder: "assets"
+public_folder: "/"
+
+collections:
+  - name: "post"
+    label: "文章"
+    folder: "content/post"
+    create: true
+    # 强制适配 Hugo Stack 的 Page Bundle 结构 (文章存放于 独立文件夹/index.md)
+    path: "{{slug}}/index"
+    # 指定图片与当前文章存放在同一层级
+    media_folder: ""
+    public_folder: ""
+    fields:
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "描述", name: "description", widget: "string", required: false }
+      - { label: "URL后缀 (Slug)", name: "slug", widget: "string" }
+      - { label: "发布时间", name: "date", widget: "datetime" }
+      - { label: "封面图", name: "image", widget: "image", required: false }
+      - { label: "分类", name: "categories", widget: "list", required: false }
+      - { label: "标签", name: "tags", widget: "list", required: false }
+      - { label: "置顶权重 (Weight)", name: "weight", widget: "number", value_type: "int", required: false }
+      - { label: "正文", name: "body", widget: "markdown" }
