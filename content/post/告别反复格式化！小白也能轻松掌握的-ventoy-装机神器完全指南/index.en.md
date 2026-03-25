@@ -3,7 +3,7 @@ title: 'Say Goodbye to Reformatting: The Ultimate Ventoy Bootable USB Guide for 
 description: Tired of formatting USBs for OS installs? Read our beginner Ventoy guide! Install once, drop ISO files, and build a universal boot drive. Learn how now!
 slug: ventoy-bootable-usb-guide
 date: 2026-03-23T21:07:00
-image: ''
+image: screen_uefi.png
 categories:
   - Tutorials
 tags:
